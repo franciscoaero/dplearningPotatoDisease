@@ -4,7 +4,7 @@ FROM python:3.12.3-slim
 # This sets the /app directory as the working directory for any RUN, CMD, ENTRYPOINT, or COPY instructions that follow.
 WORKDIR /app
 
-# This copies everything in your current directory to the /api directory in the container.
+# This copies everything in your current directory to the directory in the container.
 COPY . ./
 
 # This runs pip install for all the packages listed in your requirements.txt file.
